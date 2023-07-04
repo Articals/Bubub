@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date</title>
+    
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff;
+        }
+
+        .container {
+            text-align: center;
+            padding:20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        function hitungLamaHari() {
+            var tanggalTertentu = new Date('2023-02-07');
+            var hariIni = new Date();
+
+            var selisih = Math.floor((hariIni - tanggalTertentu) / (1000 * 60 * 60 * 24));
+
+            document.getElementById('hasil').innerHTML = "We have been together for: " + selisih + " days";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>We have been together for</h1>
+
+        <button onclick="hitungLamaHari()">Press</button>
+
+        <div id="hasil"></div>
+    </div>
+    <style>
+        body {
+            background-image: url("bub/hold.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <style>
+        .btn {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #ffffff;
+          color: #000000;
+          text-decoration: none;
+          border-radius: 30px;
+          transition: background-color 0.3s ease;
+          font-weight: bold;
+        }
+    
+        .btn:hover {
+          background-color: #ffffff;
+        }
+    
+        .btn:active {
+          transform: translateY(2px);
+        }
+      </style>
+    
+      <a href="index.html" class="btn">To homepage</a>
+    
+</body>
+</html>
